@@ -1,0 +1,166 @@
+
+<html>
+<head>
+
+    <title>Project 1</title>
+    <script src="libs/aframe.min.js"></script>
+
+</head>
+<body>
+<a-scene light="defaultLightsEnabled: false">
+
+    <a-assets>
+        <audio id="blip1" src="assets/horned_owl.wav"></audio>
+        <a-asset-item id="drone" src="assets/scene.gltf">
+    </a-assets>
+
+    <a-entity position="54 1.5 12">
+        <a-camera universal-controls>
+            <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
+                              radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
+        </a-camera>
+    </a-entity>
+
+<a-entity>
+    <a-obj-model src="assets/DUCK.OBJ" mtl="assets/DUCK.MTL" position="40.727 0 6" scale="8 8 8" material=""></a-obj-model>
+
+</a-entity>
+
+    <a-entity>
+        <a-obj-model src="assets/tv.obj" mtl="assets/tv.mtl" position="1 1 1" scale="8 8 8" material=""></a-obj-model>
+    </a-entity>
+
+    <!-- Table1 -->
+    <a-entity position="10 0 10">
+        <a-box scale="10 0.18 4" position="0 1.379 0" src="url(images/brick1.jpg)"></a-box>
+        <a-box src="url(images/brick1.jpg)" position="-4.414 0.69 -1.528" scale="0.42 1.2 0.4"></a-box>
+        <a-box src="url(images/brick1.jpg)"position="4.414 0.69 -1.517" scale="0.42 1.2 0.4"></a-box>
+        <a-box src="url(images/brick1.jpg)" position="-4.414 0.683 1.22" scale="0.42 1.2 0.4"></a-box>
+        <a-box src="url(images/brick1.jpg)" position="4.414 0.69 1.29" scale="0.42 1.2 0.4" geometry="height:1.2"></a-box>
+
+    </a-entity>
+
+    <!--Floor -->
+    <a-plane src="url(images/floor.jpg)" rotation="-90 0 0" position="24.929 0 -5.524" scale="150 110 1"></a-plane>
+
+    <a-entity collada-model="assets/stormtrooper.dae" rotation="90 180 0" position="-30.168 -0.105 6" scale="2 2 2"></a-entity>
+
+
+    <!-- Floor --
+    <a-box scale="100 0.2 100" position="0 0 0" rotation="0 0 0" src="url(images/floor.jpg)"></a-box>>
+
+
+    <!-- Walls -->
+    <a-box scale="25 0.2 150" position="25 8 50"  rotation="0 90 90" src="url(images/brick1.jpg)"></a-box>
+    <a-box scale="25 0.2 110" position="-49 8 -4.673" rotation="0 0 90" src="url(images/brick1.jpg)"></a-box>
+    <a-box scale="25 0.2 150" position="24.314 8 -60.152" rotation="0 90 90" src="url(images/brick1.jpg)"></a-box>
+    <a-box scale="25 0.2 110" position="99.382 8 -5.026" rotation="0 0 90" src="url(images/brick1.jpg)"></a-box>
+
+    <!--chair1 -->
+   <a-entity position="9 0 9.5">
+       <a-box scale="5 3 0.5" position="0 1.458 -5.738" rotation="90 0 0" src="url(images/fire.png)"></a-box>
+       <a-box scale="0.5 0.5 1" position="1.687 0.847 -4.645" rotation="90 0 0" src="url(images/fire.png)"></a-box>
+       <a-box scale="0.5 0.5 1" position="-2.119 0.847 -6.570" rotation="90 0 0" src="url(images/fire.png)"></a-box>
+       <a-box scale="0.5 0.5 1" position="1.687 0.847 -6.819" rotation="90 0 0" src="url(images/fire.png)"></a-box>
+       <a-box scale="0.5 0.5 1" position="-2.119 0.847 -4.465" rotation="90 0 0" src="url(images/fire.png)"></a-box>
+       <a-box scale="5 3 0.5" position="0 2.985 -7.408" rotation="0 0 0" src="url(images/fire.png)"></a-box>
+   </a-entity>
+       <!--table2 -->
+       <a-entity>
+           <a-cylinder scale="8 0.7 8" position="-23.59 4.6 -1.962" rotation="0 0 0" src="url(images/brick1.jpg)"></a-cylinder>
+           <a-box scale="2 2 4" position="-28.862 2.466 0.176" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+           <a-box scale="2 2 4" position="-18.498 2.4 1.885" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+           <a-box scale="2 2 4" position="-23.925 2.415 -6.691" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+
+       </a-entity>
+
+       <!--chair2 -->
+       <a-entity>
+           <a-cylinder scale="2 0.5 2" position="-23.98 4.5 -15.35" rotation="0 0 0" color="gray"></a-cylinder>
+           <a-box scale="0.5 0.5 4" position="-25.1 2.415 -15.86" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+           <a-box scale="0.5 0.5 4" position="-22.85 2.415 -15.81" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+           <a-box scale="0.5 0.5 4" position="-23.02 2.415 -14.11" rotation="90 0 0" src="url(images/brick1.jpg)"></a-box>
+           <a-box scale="3 5 0.5" position="-23.892 6.818 -17.371" color="gray"></a-box>
+
+       </a-entity>
+
+       <script>
+           function play(){
+               var audio = document.getElementById("audio");
+               audio.play();
+           }
+       </script>
+
+
+       <a-box position="-26.442 8.333 -1.64" rotation="45 50 45" src="https://i.imgur.com/mYmmbrp.jpg" scale="2 1 2">
+           <a-animation attribute="position" to="-26.442 8.88 -1.64" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+
+       </a-box>
+
+    <a-cylinder scale="7 10 20" position="-13.909 2.822 31.6" src="url(images/20130827160832-1799076408.jpg)" rotation="0 90 0"></a-cylinder>
+
+       <!-- TV -->
+    <a-box scale="20 15 2" position="-12.2 15.268 33.33" src="url(images/tv.png)"></a-box>
+
+       <a-entity position="0 0 5" color="black">
+           <a-camera></a-camera>
+       </a-entity>
+
+    <!-- advertisement posts -->
+    <a-box scale="10 15 0.48" position="83.109 11.14 49.175" src="url(images/1.jpg)"></a-box>
+    <a-box scale="10 15 0.5" position="68.767 10 49.797" src="url(images/2014-NBA-All-stars.jpg)"></a-box>
+    <a-box scale="10 15 0.5" position="54.02 11.14 49.045" src="url(images/Kobi.jpg)"></a-box>
+    <a-box scale="10 15 0.5" position="36.954 11.14 49.234" src="url(images/LebronJames-NBA-Stars.jpg)"></a-box>
+    <a-box scale="10 15 0.5" position="18.067 11.14 49.741" src="url(images/cartoon1.jpg)"></a-box>
+    <a-box scale="10 15 0.5" position="-49.002 9.956 10.085" src="url(images/wenhao.jpeg)" rotation="0 90 0"></a-box>
+    <a-box scale="10 15 0.5" position="-48.577 10 -10" src="url(images/Yijianlian.jpg)" rotation="0 90 0"></a-box>
+    <a-box scale="10 15 0.5" position="-48.747 10 -34.551" src="url(images/NBA-ASG-advertisements-featured-image.jpg)" rotation="0 90 0"></a-box>
+
+       <!-- table 3-->
+       <a-box scale="7 10 0.5" position="22.522 3.974 -4.038" src="url(images/brick1.jpg)" rotation="90 90 0"></a-box>
+       <a-cylinder scale="0.5 4 0.5" position="18.499 2 -5.787" src="url(images/brick1.jpg)" rotation="0 0 0"></a-cylinder>
+       <a-cylinder scale="0.5 4 0.5" position="25.668 2 -6.45" src="url(images/brick1.jpg)"></a-cylinder>
+       <a-cylinder scale="0.5 4 0.5" position="25.668 2 -1.621" src="url(images/brick1.jpg)"></a-cylinder>
+       <a-cylinder scale="0.5 4 0.5" position="18.558 2 -1.067" src="url(images/brick1.jpg)"></a-cylinder>
+
+       <!-- cake-->
+       <a-cylinder scale="2 1 2" position="-22.964 5.46 -3.393" src="url(images/cake.jpeg)"></a-cylinder>
+
+       <!--book shelf-->
+       <a-entity>
+           <a-box scale="13 0.3 5" position="26.792 12.712 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="33.375 6.325 31.941" src="url(images/_5.png)" rotation="0 0 90"></a-box>
+           <a-box scale="13 0.3 5" position="20.072 6.491 31.941" src="url(images/_5.png)" rotation="0 0 90"></a-box>
+           <a-box scale="13 0.3 5" position="26.7 0.395 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="26.7 5.24 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 5" position="26.523 9.123 31.941" src="url(images/_5.png)"></a-box>
+           <a-box scale="13 0.3 13" position="26.523 6.342 34.432" src="url(images/_5.png)" rotation="90 0 0"></a-box>
+           <a-obj-model src="assets/Bookmodel.OBJ" mtl="assets/Bookmodel.MTL" position="21.901 6.801 30.536" scale="1 1 0.5" material="" rotation="90 90 0"></a-obj-model>
+           <a-obj-model src="assets/Bookmodel.OBJ" mtl="assets/Bookmodel.MTL" position="28.691 10.056 30.536" scale="1 1 0.5" material="" rotation="90 90 0"></a-obj-model>
+
+       </a-entity>
+
+
+       <a-gltf-model src="#drone" position="20.274 4.509 -3.795" animation-mixer="" rotation="0 180 0" scale="3 2 3" gltf-model="assets/scene.gltf"></a-gltf-model>
+
+    <a-entity>
+        <a-obj-model src="assets/basketball.OBJ" mtl="assets/basketball.MTL" position="30.966 1.417 -5.568" scale="0.13 0.13 0.13" material=""></a-obj-model>
+        <a-animation attribute="position" to="30.966 1.417 -5.5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity>
+        <a-obj-model src="assets/milkyyy.obj" mtl="assets/milkyyy.mtl" position="-17.908 7.264 1" scale="0.02 0.02 0.02" material="" rotation="90 90 90"></a-obj-model>
+
+    </a-entity>
+
+    <a-light type="ambient" color="#999"></a-light>
+
+    <a-entity>
+        <a-obj-model src="assets/mesh.obj" mtl="assets/mesh.mtl" position="-17.908 7.264 4" scale="0.02 0.02 0.02"  rotation="0 0 0"></a-obj-model>
+
+    </a-entity>
+
+
+</a-scene>
+</body>
+</html>
