@@ -9,19 +9,20 @@
 
 </head>
 <body>
-<a-scene light="defaultLightsEnabled: false">
+<a-scene>
 
     <a-assets>
         <audio id="blip1" src="assets/horned_owl.wav"></audio>
-        <a-asset-item id="drone" src="assets/scene.gltf">
+        <a-asset-item id="drone" src="assets/scene.gltf"></a-asset-item>
+        <a-asset-item id="cake" src="assets/cake/scene.gltf"></a-asset-item>
+        <a-asset-item id="sofa" src="assets/sofa/scene.gltf"></a-asset-item>
+        <a-asset-item id="tv" src="assets/tv/scene.gltf"></a-asset-item>
+        <a-asset-item id="tvremote" src="assets/tvremote/scene.gltf"></a-asset-item>
     </a-assets>
 
-    <a-entity position="54 1.5 12">
-        <a-camera universal-controls>
-        <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
-                              radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
-    </a-camera>
-    </a-entity>
+
+    <a-sky color="#ECECEC"></a-sky>
+
 
 <a-entity>
     <a-obj-model src="assets/DUCK.OBJ" mtl="assets/DUCK.MTL" position="40.727 0 6" scale="8 8 8" material=""></a-obj-model>
@@ -44,8 +45,8 @@
     <a-entity collada-model="assets/stormtrooper.dae" rotation="90 180 0" position="-30.168 -0.105 6" scale="2 2 2"></a-entity>
 
 
-    <!-- Floor --
-    <a-box scale="100 0.2 100" position="0 0 0" rotation="0 0 0" src="url(images/floor.jpg)"></a-box>>
+    <!-- ceiling -->
+    
 
 
     <!-- Walls -->
@@ -97,9 +98,6 @@
 
     <a-cylinder scale="7 10 20" position="-13.909 2.822 31.6" src="url(images/20130827160832-1799076408.jpg)" rotation="0 90 0"></a-cylinder>
 
-       <!-- TV -->
-    <a-box scale="20 15 2" position="-12.2 15.268 33.33" src="url(images/tv.png)"></a-box>
-
        <a-entity position="0 0 5" color="black">
            <a-camera></a-camera>
        </a-entity>
@@ -121,8 +119,6 @@
        <a-cylinder scale="0.5 4 0.5" position="25.668 2 -1.621" src="url(images/brick1.jpg)"></a-cylinder>
        <a-cylinder scale="0.5 4 0.5" position="18.558 2 -1.067" src="url(images/brick1.jpg)"></a-cylinder>
 
-       <!-- cake-->
-       <a-cylinder scale="2 1 2" position="-22.964 5.46 -3.393" src="url(images/cake.jpeg)"></a-cylinder>
 
        <!--book shelf-->
        <a-entity>
@@ -151,8 +147,10 @@
 
     </a-entity>
 
-    <a-light type="ambient" color="#999"></a-light>
-
+    <a-gltf-model src="#cake" position="8.528 1.491 10.559" rotation="0 180 0" scale="0.07 0.07 0.07" gltf-model="assets/cake/scene.gltf"></a-gltf-model>
+    <a-gltf-model src="#sofa" position="-4.595 0 -11.834" scale="0.15 0.15 0.15" gltf-model="assets/sofa/scene.gltf"></a-gltf-model>
+    <a-gltf-model src="#tv" position="-15.921 13.77 30.653" scale="3 2.3 2" gltf-model="assets/tv/scene.gltf"></a-gltf-model>
+    <a-gltf-model src="#tvremote" position="-7.439 4.036 -13.182" scale="0.01 0.01 0.01" gltf-model="assets/tvremote/scene.gltf"></a-gltf-model>
 
 </a-scene>
 </body>
