@@ -18,9 +18,10 @@
         <a-asset-item id="sofa" src="assets/sofa/scene.gltf"></a-asset-item>
         <a-asset-item id="tv" src="assets/tv/scene.gltf"></a-asset-item>
         <a-asset-item id="tvremote" src="assets/tvremote/scene.gltf"></a-asset-item>
+        <a-asset-item id="cup" src="assets/cups/scene.gltf"></a-asset-item>
     </a-assets>
 
-    <a-entity position="54 1.5 12">
+    <a-entity cursor position = "1 7 3">
         <a-camera>
             <a-entity raycaster="far: 150; objects: .intersectable" cursor geometry="primitive: ring; radiusOuter: 0.015;
                               radiusInner: 0.01; segmentsTheta: 32" material="color: #283644; shader: flat" position="0 0 -0.75"></a-entity>
@@ -85,13 +86,6 @@
 
        </a-entity>
 
-       <script>
-           function play(){
-               var audio = document.getElementById("audio");
-               audio.play();
-           }
-       </script>
-
 
        <a-box position="-26.442 8.333 -1.64" rotation="45 50 45" src="https://i.imgur.com/mYmmbrp.jpg" scale="2 1 2">
            <a-animation attribute="position" to="-26.442 8.88 -1.64" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
@@ -137,23 +131,42 @@
        </a-entity>
 
 
-       <a-gltf-model src="#drone" position="20.274 4.509 -3.795" animation-mixer="" rotation="0 180 0" scale="3 2 3" gltf-model="assets/scene.gltf"></a-gltf-model>
+    <a-gltf-model src="#drone" position="21 4.509 -5.856" animation-mixer="" rotation="0 180 0" scale="3 2 3" gltf-model="assets/scene.gltf"></a-gltf-model>
 
     <a-entity>
         <a-obj-model src="assets/basketball.obj" mtl="assets/basketball.mtl" position="30.966 1.417 -5.568" scale="0.13 0.13 0.13" material=""></a-obj-model>
         <a-animation attribute="position" to="30.966 1.417 -5.5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
     </a-entity>
 
-    <a-entity>
-        <a-obj-model src="assets/milkyyy.obj" mtl="assets/milkyyy.mtl" position="-17.908 7.264 1" scale="0.02 0.02 0.02" material="" rotation="90 90 90"></a-obj-model>
+    <a-obj-model src="assets/milkyyy.obj" mtl="assets/milkyyy.mtl" position="-24.318 7.423 -6.74" scale="0.02 0.02 0.02" material="" rotation="90 90 90"></a-obj-model>
 
-    </a-entity>
 
     <a-gltf-model src="#cake" position="8.528 1.491 10.559" rotation="0 180 0" scale="0.07 0.07 0.07" gltf-model="assets/cake/scene.gltf"></a-gltf-model>
     <a-gltf-model src="#sofa" position="-4.595 0 -11.834" scale="0.15 0.15 0.15" gltf-model="assets/sofa/scene.gltf"></a-gltf-model>
     <a-gltf-model src="#tv" position="-15.921 13.77 30.653" scale="3 2.3 2" gltf-model="assets/tv/scene.gltf"></a-gltf-model>
     <a-gltf-model src="#tvremote" position="-7.439 4.036 -13.182" scale="0.01 0.01 0.01" gltf-model="assets/tvremote/scene.gltf"></a-gltf-model>
 
+    <a-gltf-model src="#cup" position="-21.551 4.877 -6.286" gltf-model="assets/cups/scene.gltf"></a-gltf-model>
+
+    <!--Setup lighting-->
+    <a-light type="directional" color="grey" position="-.5 1 1" angle="60" decay="1" intensity=".6" ></a-light>
+    <a-light id="main-light" type="ambient" color="white" position="0 0 0" angle="60" decay="1" intensity="1"></a-light>
+
+    <!--Function that is called when the light switch is pressed-->
+    <script>
+        function setLight(){
+            var light = document.querySelector('#main-light');
+            var current_color = light.getAttribute('color');
+            if (current_color == 'grey'){
+                light.setAttribute('color', 'white');
+            }
+            else{
+                light.setAttribute('color', 'grey');
+            }
+        }
+    </script>
+
+    <a-box onclick="setLight()" material="side:double;src:images/light-switch.jpg" width="16" height="22" depth="1" position="43.884 7.065 49.477" scale="0.2 0.2 0.2" static-body="" class="intersectable"></a-box>
 </a-scene>
 </body>
 </html>
