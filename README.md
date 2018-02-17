@@ -31,7 +31,7 @@ I created a table and put a laptop and an iPhone on the table. People can use bo
 ![ScreenShot](/images/7.PNG)
 
 Description:
-This is a book shelf, it is made by several boxes and I put two books to the book shelf. The book model was downloaded.
+This is a book shelf, it is made by several boxes and I put two books to the book shelf. The book model was downloaded. The light sitwch is behind the book shelf.
 
 ![ScreenShot](/images/8.PNG)
 
