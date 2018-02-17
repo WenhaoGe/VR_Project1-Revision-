@@ -28,12 +28,14 @@ I completed my project on my own. I will explain everything in my house.
 Description:
 I created a table and put a laptop and an iPhone on the table. People can use both to do their jobs and do entertainments.
 
-[![ScreenShot](/images/7.PNG)
+![ScreenShot](/images/7.PNG)
 
 Description:
 This is a book shelf and I put two books to the book shelf.
 
-[![ScreenShot](/images/8.PNG)
+![ScreenShot](/images/8.PNG)
+
+Description: On this table I put a cake and a plate. 
 
 [![ScreenShot](/images/9.PNG)
 
