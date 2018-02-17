@@ -45,7 +45,7 @@ Description: The TV model was downloaded. It is a very big and beautiful TV.
 
 Description: On this table, I put a bottle of milk and a cup. People can sit down and drink the milk while watching TV. In addition, there is a floated box above the table.
 
-![ScreenShot](/images11.PNG)
+![ScreenShot](/images/11.PNG)
 
 Description: The sofa model was downloaded. I put the TV remote in the sofa. People can sit in the sofa and watch TV.
 
