@@ -35,17 +35,23 @@ This is a book shelf and I put two books to the book shelf.
 
 ![ScreenShot](/images/8.PNG)
 
-Description: On this table I put a cake and a plate. 
+Description: On this table I put a cake and a plate. When people feel hungary they can eat the cake.
 
-[![ScreenShot](/images/9.PNG)
+![ScreenShot](/images/9.PNG)
 
-[![ScreenShot](/images/10.PNG)
+Description: The TV model was downloaded. It is a very big and beautiful TV. 
 
-[![ScreenShot](/images11.PNG)
+![ScreenShot](/images/10.PNG)
 
-[![ScreenShot](/images/12.PNG)
+Description: On this table, I put a bottle of milk, a cup. People can sit down and drink the milk while watching TV. In addition, there is a floated box above the table.
 
-[![ScreenShot](/images/13.png)
+![ScreenShot](/images11.PNG)
+
+Description: The sofa model was downloaded. I put the TV remote in the sofa. People can sit in the sofa and watch TV.
+
+![ScreenShot](/images/12.PNG)
+
+![ScreenShot](/images/13.png)
 
 Reference:
 https://sketchfab.com/feed
