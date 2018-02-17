@@ -14,3 +14,5 @@ Link for tutorial Part 3: http://myweb.ttu.edu/vinhtngu/cs5331vr/part3.html
 Link for tutorial Part 4: http://myweb.ttu.edu/vinhtngu/cs5331vr/part4.html
 
 Link for tutorial Part 5: http://myweb.ttu.edu/vinhtngu/cs5331vr/part5.html
+
+[![ScreenShot](/images/7.PNG)]
