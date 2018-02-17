@@ -20,7 +20,7 @@ Click the link below to watch a live demo:
 https://www.youtube.com/watch?v=KpYEKAcZDn0
 
 Link to the web-based application: 
-http://localhost:63342/New%20folder/example1.html?_ijt=l9ne0ck9ftfm8pjhi0pr80b209
+http://wenhaoge.github.io/VR_Project1-Revision-/example1.html
 
 Explanation:
 I completed my project on my own. I will explain everything in my house. 
