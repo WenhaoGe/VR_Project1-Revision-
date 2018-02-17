@@ -26,16 +26,16 @@ Explanation:
 I completed my project on my own. I will explain everything in my house. 
 
 Description:
-I created a table and put a laptop and an iPhone on the table. People can use both to do their jobs and do entertainments.
+I created a table and put a laptop and an iPhone on the table. People can use both to do their jobs and do entertainments. The laptop model and iPhone model were downloaded.
 
 ![ScreenShot](/images/7.PNG)
 
 Description:
-This is a book shelf and I put two books to the book shelf.
+This is a book shelf, it is made by several boxes and I put two books to the book shelf. The book model was downloaded.
 
 ![ScreenShot](/images/8.PNG)
 
-Description: On this table I put a cake and a plate. When people feel hungary they can eat the cake.
+Description: On this table I put a cake and a plate. When people feel hungary they can eat the cake. If some people are going to celebrate their birthdays, they can also need this cake.
 
 ![ScreenShot](/images/9.PNG)
 
@@ -43,7 +43,7 @@ Description: The TV model was downloaded. It is a very big and beautiful TV.
 
 ![ScreenShot](/images/10.PNG)
 
-Description: On this table, I put a bottle of milk, a cup. People can sit down and drink the milk while watching TV. In addition, there is a floated box above the table.
+Description: On this table, I put a bottle of milk and a cup. People can sit down and drink the milk while watching TV. In addition, there is a floated box above the table.
 
 ![ScreenShot](/images11.PNG)
 
