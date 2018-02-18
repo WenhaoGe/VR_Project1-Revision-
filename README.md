@@ -54,7 +54,11 @@ Description: The sofa model was downloaded. I put the TV remote in the sofa. Peo
 ![ScreenShot](/images/13.png)
 
 Reference:
-https://sketchfab.com/feed
+https://sketchfab.com/models/9319f8e0c00b46cfb32f5a1327788536
+
+https://sketchfab.com/models/67a5956349574fac8431b9b12aad8b81
+
+
 
 Link to my source code:
 https://github.com/WenhaoGe
