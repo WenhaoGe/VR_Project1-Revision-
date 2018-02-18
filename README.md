@@ -60,5 +60,4 @@ https://sketchfab.com/models/536d687777f0473dbc79f00ea4a17917
 https://sketchfab.com/models/654cff787c764375b64e03c9ad6392f6
 
 Link to my source code:
-https://github.com/WenhaoGe
-
+https://github.com/WenhaoGe/VR_Project1-Revision-
